@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "tovienchantments",
+	"version": "${version}",
+	"name": "ToviEnchantments",
+	"description": "Tovi Enchantments brings a whole array of new Enchantments for you to mess around with, while keeping them balanced for Vanilla minecraft!",
+	"authors": [
+		"Tovi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tovienchantments/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tovi.tovienchantments.ToviEnchantments"
+		],
+		"client": [
+			"tovi.tovienchantments.ToviEnchantmentsClient"
+		],
+		"fabric-datagen": [
+			"tovi.tovienchantments.ToviEnchantmentsDataGenerator"
+		]
+
+	},
+	"mixins": [
+		"tovienchantments.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
